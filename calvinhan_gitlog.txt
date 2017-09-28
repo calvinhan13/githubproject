@@ -1,0 +1,107 @@
+In the first line of the gitlog.txt file paste in the URL of your GitHub repository for this test. To get the URL go to the GitHub repository and copy out the http address from the navigation bar in your browser, do not use the “clone” address.
+
+
+Calvins-MacBook-Pro:desktop calvinhan$ cd githubproject
+Calvins-MacBook-Pro:githubproject calvinhan$ ls
+bin	src
+Calvins-MacBook-Pro:githubproject calvinhan$ git init
+Initialized empty Git repository in /Users/calvinhan/Desktop/githubproject/.git/
+Calvins-MacBook-Pro:githubproject calvinhan$ git remote add origin git@github.com:calvinhan13/githubproject.git
+Calvins-MacBook-Pro:githubproject calvinhan$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	.classpath
+	.gitignore
+	.project
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Calvins-MacBook-Pro:githubproject calvinhan$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.gitignore
+	src/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Calvins-MacBook-Pro:githubproject calvinhan$ git commit -m "first commit"
+On branch master
+
+Initial commit
+
+Untracked files:
+	.gitignore
+	src/
+
+nothing added to commit but untracked files present
+Calvins-MacBook-Pro:githubproject calvinhan$ git remote add origin git@github.com:calvinhan13/githubproject.git
+fatal: remote origin already exists.
+Calvins-MacBook-Pro:githubproject calvinhan$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:calvinhan13/githubproject.git'
+Calvins-MacBook-Pro:githubproject calvinhan$ git push origin master
+error: src refspec master does not match any.
+error: failed to push some refs to 'git@github.com:calvinhan13/githubproject.git'
+Calvins-MacBook-Pro:githubproject calvinhan$ git add .
+Calvins-MacBook-Pro:githubproject calvinhan$ git commit -m "forgot add"
+[master (root-commit) cbef0b9] forgot add
+ 2 files changed, 17 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 src/githubproject/helloworld.java
+Calvins-MacBook-Pro:githubproject calvinhan$ git push origin master
+Counting objects: 6, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 526 bytes | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To git@github.com:calvinhan13/githubproject.git
+ * [new branch]      master -> master
+Calvins-MacBook-Pro:githubproject calvinhan$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	calvinhan_gitlog.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Calvins-MacBook-Pro:githubproject calvinhan$ git git branch documentation
+git: 'git' is not a git command. See 'git --help'.
+
+Did you mean this?
+	init
+Calvins-MacBook-Pro:githubproject calvinhan$ git branch documentation
+Calvins-MacBook-Pro:githubproject calvinhan$ git checkout documentation
+M	.gitignore
+Switched to branch 'documentation'
+Calvins-MacBook-Pro:githubproject calvinhan$ git log --oneline -- graph --all
+Calvins-MacBook-Pro:githubproject calvinhan$ git status
+On branch documentation
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	calvinhan_gitlog.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Calvins-MacBook-Pro:githubproject calvinhan$ 
