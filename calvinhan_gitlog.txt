@@ -1,3 +1,18 @@
+
+
+
+
+URL to github repository: https://github.com/calvinhan13/githubproject
+
+
+
+
+
+
+
+
+
+
 In the first line of the gitlog.txt file paste in the URL of your GitHub repository for this test. To get the URL go to the GitHub repository and copy out the http address from the navigation bar in your browser, do not use the “clone” address.
 
 
